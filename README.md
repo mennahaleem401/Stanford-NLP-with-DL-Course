@@ -34,7 +34,3 @@ Each folder = 1 session from the course, including:
 I'm documenting my journey through this amazing course to deepen my understanding of NLP and DL concepts — and to help others who might be learning too!
 
 ---
-
-### 🧑‍💻 Author
-
-Menna Haleem | AI Student @ Benha University | [LinkedIn](#) | [Portfolio](#)
