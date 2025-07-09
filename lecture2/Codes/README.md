@@ -55,22 +55,7 @@ def get_matrix_of_vectors(wv_from_bin, required_words):
 
 ---
 
-###  تقليل الأبعاد للتمثيل البصري
 
-```python
-from sklearn.decomposition import PCA
-
-def reduce_to_k_dim(M, k=2):
-    pca = PCA(n_components=k)
-    M_reduced = pca.fit_transform(M)
-    return M_reduced
-
-M, word2ind = get_matrix_of_vectors(wv_from_bin, words)
-M_reduced = reduce_to_k_dim(M, k=2)
-
-M_lengths = np.linalg.norm(M_reduced, axis=1)
-M_reduced_normalized = M_reduced / M_lengths[:, np.newaxis]
-```
 
 ---
 
