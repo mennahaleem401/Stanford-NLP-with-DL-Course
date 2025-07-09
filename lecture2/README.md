@@ -1,4 +1,4 @@
-**Word Embeddings and Neural NLP**
+**Word Embeddings and Neural NLP: Summary for Repo**
 
 ---
 
@@ -86,7 +86,9 @@ $w_x \cdot (w_a - w_b) \approx \log \frac{P(x|a)}{P(x|b)}$
 
 ### GloVe Loss Function:
 
-$J = \sum_{i,j=1}^V f(X_{ij}) (w_i^T \tilde{w}_j + b_i + \tilde{b}_j - \log X_{ij})^2$
+
+![image](https://github.com/user-attachments/assets/dc8e8bc8-90c2-49ae-b72b-20f43c00b842)
+
 
 * $f(X_{ij})$: weighting function (usually increases then caps)
 * Fast to train
@@ -180,4 +182,3 @@ $z = Wx + b \quad \text{then} \quad a = f(z)$
 ---
 
 Prepared by: Menna Haleem
-For use in NLP / ML notes and educational repository
