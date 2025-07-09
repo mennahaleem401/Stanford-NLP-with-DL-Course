@@ -1,7 +1,7 @@
 
-## 🧠 Stanford NLP with Deep Learning - Word Embeddings (GloVe)
+##  Stanford NLP with Deep Learning - Word Embeddings (GloVe)
 
-### 🔹 تحميل نموذج GloVe
+###  تحميل نموذج GloVe
 
 ```python
 import gensim.downloader as api
@@ -17,7 +17,7 @@ wv_from_bin = load_embedding_model()
 
 ---
 
-### 🔹 تكوين المصفوفة من الكلمات المطلوبة
+###  تكوين المصفوفة من الكلمات المطلوبة
 
 ```python
 import numpy as np
@@ -55,7 +55,7 @@ def get_matrix_of_vectors(wv_from_bin, required_words):
 
 ---
 
-### 🔹 تقليل الأبعاد للتمثيل البصري
+###  تقليل الأبعاد للتمثيل البصري
 
 ```python
 from sklearn.decomposition import PCA
@@ -74,7 +74,7 @@ M_reduced_normalized = M_reduced / M_lengths[:, np.newaxis]
 
 ---
 
-### 🔹 حساب Cosine Similarity
+###  حساب Cosine Similarity
 
 ```python
 from numpy import dot
@@ -86,7 +86,7 @@ def cosine_similarity(vec1, vec2):
 
 ---
 
-### 🔹 التمثيل العكسي للفكتور (Vector Inversion)
+###  التمثيل العكسي للفكتور (Vector Inversion)
 
 ```python
 neg_vec = -wv_from_bin.get_vector("happy")  # for example
@@ -94,7 +94,7 @@ neg_vec = -wv_from_bin.get_vector("happy")  # for example
 
 ---
 
-### 🔹 حل Analogies
+###  حل Analogies
 
 ```python
 import pprint
@@ -110,7 +110,7 @@ $$
 
 ---
 
-### 🔹 أمثلة على الأخطاء في analogies
+###  أمثلة على الأخطاء في analogies
 
 #### مثال:
 
@@ -128,7 +128,7 @@ pprint.pprint(wv_from_bin.most_similar(positive=['foot', 'glove'], negative=['ha
 
 ---
 
-### 🔹 تجربة Bias في النموذج
+###  تجربة Bias في النموذج
 
 ```python
 pprint.pprint(wv_from_bin.most_similar(positive=['man', 'profession'], negative=['woman']))
@@ -138,13 +138,13 @@ pprint.pprint(wv_from_bin.most_similar(positive=['woman', 'profession'], negativ
 **النتيجة:**
 غالبًا الكلمات المرتبطة بـ "man" فيها وظائف ذات مكانة عالية، بينما المرتبطة بـ "woman" فيها وظائف تقليدية أكتر.
 
-#### ✔️ شرح الانحياز (Bias)
+####  شرح الانحياز (Bias)
 
 Bias في word vectors ممكن يحصل بسبب:
 
 * البيانات اللي تم التدريب عليها كانت مليانة بالتمييزات الموجودة في المجتمع (زي النصوص الإخبارية أو مقالات الإنترنت).
 
-#### ✔️ طريقة تقليل الانحياز:
+####  طريقة تقليل الانحياز:
 
 طريقة "Hard Debiasing" زي ما شرحتها Bolukbasi et al. (2016):
 
