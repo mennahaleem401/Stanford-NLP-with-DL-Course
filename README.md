@@ -14,11 +14,6 @@ Welcome! This repository contains my notes, code implementations, and summaries 
 8. Question Answering and BERT
 9. Final Project / Applications
 
-## 💻 Environment
-
-- Python 3.x
-- NumPy, PyTorch, Jupyter
-- Optional: Google Colab / VS Code
 
 ## 📂 Folder Structure
 
