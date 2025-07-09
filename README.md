@@ -17,7 +17,7 @@ Welcome! This repository contains my notes, code implementations, and summaries 
 
 ## 📂 Folder Structure
 
-Each folder = 1 session from the course, including:
+Each folder = 1 lecture from the course, including:
 - Notes (`notes.md`)
 - Code examples (`code.ipynb`)
 - Summary of concepts (`README.md`)
